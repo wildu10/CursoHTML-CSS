@@ -1,42 +1,72 @@
+/*Este estilo se conoce como "universal" y es muy importante agregarlo en todos los 
+estilos, permite ajustar el elemento al tamaño de la pantalla evitando hacer scroll
+sobre todo para los lados que resulta ser una mala experiencia*/
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-
+/*Este font-size es muy importante y es romendado que todos los CSS que se trabajetn 
+con la medida REM lo usen, lo que hace es que por cada unidad de REM (1rem) equivalga
+a 10px, teniendo en cuenta que por defecto el navegador pone 16px al HTML*/
 html {
-    font-size: 62.5px;
+    font-size: 62.5%;
 }
 
-.header-h1 {
-    background-color: teal;
-    font-size: 1rem;
-    text-align: center;
+/*Estilo con la etiqueta "h1"*/
+h1 {
+    color: purple;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+/*Al ingresar difirentes tipos de fuetes se garantiza que si la primera fuente (Arial)
+no se carga o el navegador no tiene esa fuenta, mismo navegador cargaria la segunda
+fuente (Helvetica) y si esta falla pone la ultima que es la del navegador
+#page-title {
+    font-family: Arial, Helvetica, sans-serif;
+}*/
+
+.title {
+    font-size: 2.4rem;
+    font-family: monospace;
+}
+
+.nav {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+/*"inline" => permite pone un listado de palabras de forma horizontal
+    "border-radius" => hace un redondeo de una esquina de un rectangulo*/
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
     color: white;
+    background-color: #13a4a4;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    position: absolute;
-    top: 5%;
-    width: 30%;
-    margin: auto 35%;
+    text-decoration: none;
+}
+/*con una "class" (.nav) mas otra "class" (.blog) podemos acceder a un elemento
+en especifico como es el caso de este ejemplo, que solo se le cambia el
+color a un elemento dentro de una lista*/
+.nav .blog {
+    background-color: orangered;
 }
 
-.main {
-    width: 90%;
-    height: 80%;
-    margin-top: 5%;
-    margin-left: 5%;
+/*"hover" => utiliza el evento del click cuando pasa sobre una palabra para cambiar su color indicando que se 
+esta sobre la misma
+.main-nav__item:hover {
+    color: blue;
 }
-
-.main-text .main-text_p {
-    background-image: url(/pics/river.jpg);
-    border-radius: 2rem;
-    border: 0.05rem gray solid;
-    margin: 7% 15%;
-    font-size: 0.5rem;
-    color: orangered;
-    text-align: justify;
-    height: 100%;
-    min-height: 10rem;
-    padding: 10%;
-    padding-top: 30%;
+"active" => tiene el mismo efecto que "hover" pero solo cuando se da click sobre la palabra
+.main-nav__item:active {
+    color: red;
 }
+"after" => introduce "|" entre palabras de un navegador
+.main-nav__item::after {
+    content: "   |   ";
+}*/

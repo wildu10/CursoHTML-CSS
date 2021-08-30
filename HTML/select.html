@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Esta página te mostrará fotos de gato" />
+        <meta name="robots" content="index,follow" />
+        <title>Select</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Trabajando con select</h1>
+        </header>
+        <main>
+<!--Esta forma de utilizar "select" es aceptable y lo que hace es que saca
+    saca una lista de las opciones que tiene con la dificultad de que cuando
+    la lista es muy grande toca hacer scroll o si es en un celular ni que hablar
+-->
+            <select name="cursos" id="">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CCS3</option>
+                <option value="Web Standards">Web Standards</option>
+            </select>
+<!--Este otra forma suele ser mas practica y nos brinda ademas de la lista
+    la opcion de ingresar el nombre de lo que estamos buscando y con solo 
+    empezar a escribir nos va mostrando opciones relacionadas con lo que 
+    se esta buscando
+-->
+            <span>||||| Otra forma mas practica de hacer un select</span>
+            <input list="l_cusos" />
+            <datalist id="l_cusos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                <option value="Web Standards"></option>
+            </datalist>
+        </main>
+        <footer>
+            <p>Esfuerzate</p>
+        </footer>
+    </body>
+</html>

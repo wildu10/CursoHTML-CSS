@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Esta página te mostrará fotos de gato" />
+        <meta name="robots" content="index,follow" />
+        <title>Input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Formularios y entradas (botones)</h1>
+        </header>
+        <section>
+            <form>
+                <label for="Nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" id="Nombre" placeholder="Tu nombre" />
+                </label>
+                <label for="Inicio_platzi">
+                    <span>¿Dia de inicio en Platzi?</span>
+                    <input type="date" id="Inicio_platzi" />
+                </label>
+                <label for="Horario">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="time" id="Horario" />
+                </label>
+                <span>Bonton con input</span>
+<!--el Boton con input por defecto viene con el nombre Enviar, pero se 
+    puede cambiar el nombre como se ve en el ejemplo, este tipo de 
+    boton es recomendado solo para formularios
+-->
+                <input type="submit" value="Tipo de nombre">
+                <span>||||| Boton con Button</span>
+<!--el Boton con button con la etiqueta type se puede seleccionar entre
+    varias funcionalidades, tambien se puede personalizar el nombre y 
+    es recomendado para diferentes tipos de funciones
+-->
+                <button type="submit">Tipo de nombre</button>
+            </form>
+        </section>
+        <footer>
+            <p>Esfuerzate</p>
+        </footer>
+    </body>
+</html>
