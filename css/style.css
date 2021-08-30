@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5px;
+}
+
+.header-h1 {
+    background-color: teal;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 5%;
+    width: 30%;
+    margin: auto 35%;
+}
+
+.main {
+    width: 90%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.main-text .main-text_p {
+    background-image: url(/pics/river.jpg);
+    border-radius: 2rem;
+    border: 0.05rem gray solid;
+    margin: 7% 15%;
+    font-size: 0.5rem;
+    color: orangered;
+    text-align: justify;
+    height: 100%;
+    min-height: 10rem;
+    padding: 10%;
+    padding-top: 30%;
+}
