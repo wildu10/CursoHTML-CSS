@@ -1,3 +1,7 @@
+:root {
+    --bady-font: 3rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,38 +9,117 @@
 }
 
 html {
-    font-size: 62.5px;
+    font-size: 62.5%;
 }
 
-.header-h1 {
-    background-color: teal;
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-    border-radius: 0.5rem;
-    position: absolute;
-    top: 5%;
-    width: 30%;
-    margin: auto 35%;
+body {
+    font-size: 16px;
+    background-color: black;
+    color: lightslategrey;
+    width: 100vw;
 }
+
+.header {
+    background-color: #032828;
+    height: 5vh;
+    font-size: var(--bady-font);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-ul li {
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
 
 .main {
-    width: 90%;
-    height: 80%;
-    margin-top: 5%;
-    margin-left: 5%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-.main-text .main-text_p {
-    background-image: url(/pics/river.jpg);
-    border-radius: 2rem;
-    border: 0.05rem gray solid;
-    margin: 7% 15%;
-    font-size: 0.5rem;
-    color: orangered;
+.main aside {
+    width: 15vw;
+    height: 90vh;
+}
+
+.main-ul {
+    height: 90vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-ul li {
+    font-size: var(--bady-font);
+    height: 21vh;
+    border-radius: 0.8rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #032828;
+    padding-top: 15rem;
+    color: lightgrey;
+}
+
+.main-ul-gato {
+    background-image: url(/pics/gato.jpg);
+    background-position: center;
+}
+
+.main-ul-leopardo {
+    background-image: url(/pics/leopardo.jpg);
+    background-position: center;
+}
+
+.main-ul-tigre {
+    background-image: url(/pics/tigre.jpg);
+    background-position: center;
+}
+
+.main-ul-leon {
+    background-image: url(/pics/leon.jpg);
+    background-position: center;
+}
+
+.main-div {
+    background-image: url(/pics/midfelino.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 84vw;
+    height: 90vh;
+    font-size: var(--bady-font);
+    border-radius: 0.8rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #032828;
+}
+
+.main-div p {
     text-align: justify;
-    height: 100%;
-    min-height: 10rem;
-    padding: 10%;
-    padding-top: 30%;
+    padding-top: 65vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.footer {
+    background-color: #032828;
+    height: 5vh;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: center;
+    font-size: var(--bady-font);
+}
+
+.footer-ul li {
+    list-style-type: none;
+    padding: 0 1rem;
 }
