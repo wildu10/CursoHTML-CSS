@@ -89,7 +89,8 @@ body {
 }
 
 .main-div {
-    background-image: url(/pics/midfelino.jpg);
+    background-image: url(/pics/largeFelino.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     width: 84vw;
